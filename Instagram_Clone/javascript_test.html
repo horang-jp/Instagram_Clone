@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        
+/* 
+id = 100
+class = 10
+tag = 1
+*/
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        
+        /* box와on을 한꺼번에 가지고 있는 class를 찾아라 */
+        .box.on{
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box on">
+        
+    </div>
+    
+    <script>
+    
+        // constant: 변수가 변하지 않음
+        const userName = "착한호중이"; // string
+        const age = 43; // number
+        const married = false; // boolean
+        // 여기서 let은 변화할 수 있다.
+        let girlfriend; // undefined
+        const money = null; // object
+        
+        
+        console.log(typeof userName);
+        console.log(typeof age);
+        console.log(typeof married);
+        console.log(typeof girlfriend);
+        console.log(typeof money);
+        
+        console.log(2-3);
+        console.log(userName === "나쁜호중이");
+        console.log(age > 30);
+        
+        if(userName === "착한호중이") {
+            console.log("정답");
+        } else if(userName === "나쁜호랑이"){
+            console.log("다른 정답");
+        } else{
+            console.log("완전 오답")
+        }
+        
+        
+        // 정의    조건    갱신
+        for(let i = 0; i < 100; i++){
+            // console.log(i + '번이야');
+        }
+        
+        // document.getElementsByClassName('box');
+        // const box = document.querySelectorAll('.box');
+        const box = document.querySelector('.box');
+        
+        console.log(box);
+        
+        box.addEventListener('click', function(){
+            // box.style.background = "blue";
+            
+            // box.classList.add('on')
+            // box.classList.remove('on')
+            box.classList.toggle('on')
+        })
+        
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
